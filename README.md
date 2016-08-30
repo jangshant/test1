@@ -21,9 +21,9 @@ sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php5/fpm/php.ini
 grep cgi.fix_pathinfo=0 /etc/php5/fpm/php.ini
 service php5-fpm restart
 #copy paste this to check php info of the server.
-#<?php
-# phpinfo();
-#?>
+<?php
+ phpinfo();
+?>
 vi /usr/share/nginx/html/info.php
 #edit default nginx config
 vi /etc/nginx/sites-available/default
